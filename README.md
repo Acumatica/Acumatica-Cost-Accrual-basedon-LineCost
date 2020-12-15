@@ -23,7 +23,7 @@ Quick Start
 
 #### Non-Stock Item (IN202000)
 
-Use Line Cost checkbox has been added to the Non-Stock Items screen (INS202000) -> Price/Cost Information to override out-of-box Accrual Cost Based on behavior. This Field is editable if Accrue Cost is checked.
+Use Line Cost checkbox has been added to the Non-Stock Items screen (INS202000) -> Price/Cost Information to override out-of-box Accrual Cost Based on behavior. This field is editable if Accrue Cost is checked.
 
 ![Screenshot](/_ReadMeImages/IN202000.png)
 
@@ -35,7 +35,7 @@ User can edit Unit Cost value when such item is added. New Column Use Line Cost 
 
 ![Screenshot](/_ReadMeImages/SO301000.png)
 
-When such order is invoiced, it will have cost accrual based on line cost.
+When such order is invoiced, it will have cost accrual based on sales order line cost.
 
 #### Service Order (FS300100)
 
@@ -43,7 +43,7 @@ User can edit Unit Cost value when such item is added. New Column Use Line Cost 
 
 ![Screenshot](/_ReadMeImages/FS300100.png)
 
-Invoice created during billing based on service order will have cost accrual based on line item level cost.
+Invoice created during billing based on service order will have cost accrual based on service order line item level cost.
 
 #### Appointment (FS300200)
 
@@ -51,5 +51,5 @@ User can edit Unit Cost value when such item is added. New Column Use Line Cost 
 
 ![Screenshot](/_ReadMeImages/FS300200.png)
 
-Invoice created during billing based on appointment will have cost accrual based on line item level cost.
+Invoice created during billing based on appointment will have cost accrual based on appointment line item level cost.
 
