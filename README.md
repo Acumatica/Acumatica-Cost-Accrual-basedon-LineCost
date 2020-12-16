@@ -53,3 +53,12 @@ User can edit Unit Cost value when such item is added. New Column Use Line Cost 
 
 Invoice created during billing based on appointment will have cost accrual based on appointment line item level cost.
 
+Known Issues
+------------
+None at the moment
+
+## Copyright and License
+
+Copyright © `2020` `Acumatica, INC`
+
+This component is licensed under the MIT License, a copy of which is available online [here](LICENSE)
