@@ -112,7 +112,7 @@ namespace PX.LineCostForAccrueExt
 
 			if (!sender.ObjectsEqual<FSxARTran.sODetID, FSxARTran.sOID>(e.Row, e.OldRow))
 			{
-				sender.RaiseFieldUpdated<ARTran.uOM>(e.Row, null);
+				Base.CalculateAccruedCost(e.Cache, e.Row);
 			}
 		}
 	}
