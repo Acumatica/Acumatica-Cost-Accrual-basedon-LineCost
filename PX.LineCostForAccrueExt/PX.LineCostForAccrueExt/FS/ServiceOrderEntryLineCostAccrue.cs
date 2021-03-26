@@ -9,6 +9,10 @@ namespace PX.LineCostForAccrueExt
 {
     public class ServiceOrderEntryLineCostAccrue : PXGraphExtension<ServiceOrderEntry>
     {
+        [PXMergeAttributes(Method = MergeMethod.Append)]
+        [PXFormula(typeof(AppointmentExists<FSSODet.sODetID>))]
+        public void _(Events.CacheAttached<FSSODetCostAccrueExt.usrAppointmentExist> e) { }
+
         protected virtual void _(Events.RowSelected<FSSODet> e, PXRowSelected BaseInvoke)
         {
             if (BaseInvoke != null) { BaseInvoke(e.Cache, e.Args); }

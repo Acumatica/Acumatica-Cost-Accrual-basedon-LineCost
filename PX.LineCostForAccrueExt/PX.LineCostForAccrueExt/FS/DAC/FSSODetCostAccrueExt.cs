@@ -25,7 +25,7 @@ namespace PX.LineCostForAccrueExt
 
         [PXBool]
         [PXDefault(false, PersistingCheck = PXPersistingCheck.Nothing)]
-        [PXFormula(typeof(AppointmentExists<FSSODet.sODetID>))]
+        //[PXFormula(typeof(AppointmentExists<FSSODet.sODetID>))]
         [PXUIField(DisplayName = "Appointment Exists", Enabled = false, IsReadOnly = true)]
         public bool? UsrAppointmentExist { get; set; }
         #endregion
