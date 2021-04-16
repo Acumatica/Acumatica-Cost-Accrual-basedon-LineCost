@@ -25,7 +25,8 @@ namespace PX.LineCostForAccrueExt
 
         [PXBool]
         [PXDefault(false, PersistingCheck = PXPersistingCheck.Nothing)]
-        [PXFormula(typeof(AppointmentExists<FSSODet.sODetID>))]
+        //Until Temparory fix/workaround to overcome service management issue AC-196133 fixed in 2020 R2 Update 12
+        //[PXFormula(typeof(AppointmentExists<FSSODet.sODetID>))]
         [PXUIField(DisplayName = "Appointment Exists", Enabled = false, IsReadOnly = true)]
         public bool? UsrAppointmentExist { get; set; }
         #endregion
