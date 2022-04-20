@@ -1,14 +1,14 @@
 ﻿using PX.Data;
 using PX.Objects.CR;
+using PX.Objects.CS;
 using PX.Objects.IN;
 using PX.Objects.SO;
-using static PX.Objects.CR.OpportunityMaint;
 
 namespace PX.LineCostForAccrueExt
 {
-    public class OpportunityMaintLineCostAccrueExt : PXGraphExtension<OpportunityMaint>
+    public class OpportunityMaintLineCostAccrueExt : PXGraphExtension<OpportunityMaint.CRCreateSalesOrderExt, OpportunityMaint>
     {
-        public static bool IsActive() => true;
+        public static bool IsActive() => PXAccess.FeatureInstalled<FeaturesSet.distributionModule>();
 
         protected virtual void _(Events.RowSelected<CROpportunity> e, PXRowSelected BaseInvoke)
         {
@@ -32,10 +32,10 @@ namespace PX.LineCostForAccrueExt
             }
         }
 
-        public delegate void BaseDoCreateSalesOrder(CreateSalesOrderFilter param);
+        public delegate void BaseDoCreateSalesOrder();
 
         [PXOverride]
-        public virtual void DoCreateSalesOrder(CreateSalesOrderFilter param, BaseDoCreateSalesOrder BaseInvoke)
+        public virtual void DoCreateSalesOrder(BaseDoCreateSalesOrder BaseInvoke)
         {
             PXGraph.InstanceCreated.AddHandler<SOOrderEntry>((graph) =>
             {
@@ -55,7 +55,7 @@ namespace PX.LineCostForAccrueExt
                 });
             });
 
-            BaseInvoke(param);
+            BaseInvoke();
         }
     }
 }

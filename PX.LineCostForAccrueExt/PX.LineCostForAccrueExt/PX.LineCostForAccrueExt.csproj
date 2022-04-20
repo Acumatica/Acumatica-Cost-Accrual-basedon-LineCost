@@ -8,16 +8,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PX.Common">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Acumatica ERP\AcmLineCost2020R2\Bin\PX.Common.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Acumatica ERP\AcmASG2021R207\Bin\PX.Common.dll</HintPath>
     </Reference>
     <Reference Include="PX.Data">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Acumatica ERP\AcmLineCost2020R2\Bin\PX.Data.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Acumatica ERP\AcmASG2021R207\Bin\PX.Data.dll</HintPath>
     </Reference>
     <Reference Include="PX.Objects">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Acumatica ERP\AcmLineCost2020R2\Bin\PX.Objects.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Acumatica ERP\AcmASG2021R207\Bin\PX.Objects.dll</HintPath>
     </Reference>
     <Reference Include="PX.Objects.FS">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Acumatica ERP\AcmLineCost2020R2\Bin\PX.Objects.FS.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Acumatica ERP\AcmASG2021R207\Bin\PX.Objects.FS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
