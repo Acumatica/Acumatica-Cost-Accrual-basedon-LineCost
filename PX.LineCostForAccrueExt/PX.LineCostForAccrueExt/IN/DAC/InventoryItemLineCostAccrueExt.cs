@@ -1,5 +1,4 @@
-﻿using System;
-using PX.Data;
+﻿using PX.Data;
 using PX.Objects.IN;
 
 namespace PX.LineCostForAccrueExt
@@ -11,8 +10,8 @@ namespace PX.LineCostForAccrueExt
 
         [PXDBBool]
         [PXDefault(false, PersistingCheck = PXPersistingCheck.Nothing)]
-        [PXUIEnabled(typeof(Where<InventoryItem.accrueCost, Equal<True>>))]
-        [PXFormula(typeof(Default<InventoryItem.accrueCost>))]
+        [PXUIEnabled(typeof(Where<InventoryItem.postToExpenseAccount, Equal<InventoryItem.postToExpenseAccount.sales>>))]
+        [PXFormula(typeof(Default<InventoryItem.postToExpenseAccount>))]
         [PXUIField(DisplayName = "Use Line Cost")]
         public bool? UsrUseLineCostForAccrue { get; set; }
         #endregion

@@ -39,7 +39,7 @@ namespace PX.LineCostForAccrueExt
         {
             PXGraph.InstanceCreated.AddHandler<SOOrderEntry>((graph) =>
             {
-                graph.RowUpdated.AddHandler<SOLine>((cache, eArgs) =>
+                graph.FieldUpdated.AddHandler<SOLine.orderQty>((cache, eArgs) =>
                 {
                     var soLine = (SOLine)eArgs.Row;
                     InventoryItem item = InventoryItem.PK.Find(cache.Graph, soLine.InventoryID);
@@ -49,7 +49,7 @@ namespace PX.LineCostForAccrueExt
                         if (itemExt.UsrUseLineCostForAccrue.GetValueOrDefault())
                         {
                             CROpportunityProducts oppLine = PXResult<CROpportunityProducts>.Current;
-                            cache.SetValueExt<SOLine.curyUnitCost>(soLine, oppLine.CuryUnitCost);
+                            cache.SetValueExt<SOLine.unitCost>(soLine, oppLine.UnitCost);
                         }
                     }
                 });
