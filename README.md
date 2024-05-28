@@ -6,9 +6,10 @@ Extension that allows cost accrual of non-stock item based on line level cost sp
 Out-of-box Acumatica allows cost accrual based on non-stock item’s Standard Cost, Markup Percentage or Percentage of Sales Price. This add-on/extension allows cost accrual based on line level cost defined in Sales Order, Service Order and Appointment. 
 
 ### Prerequisites | Supported Versions & Builds ##
-* [Acumatica 2020 R1 (20.103.0019 or higher)](https://github.com/Acumatica/Acumatica-Cost-Accrual-basedon-LineCost/tree/2020R1) 
-* [Acumatica 2020 R2 (20.202.0043 or higher)](https://github.com/Acumatica/Acumatica-Cost-Accrual-basedon-LineCost/tree/2020R2)
-* [Acumatica 2021 R2 (21.207.0045 or higher)](https://github.com/Acumatica/Acumatica-Cost-Accrual-basedon-LineCost/tree/2021R2)
+* Acumatica 2020 R1 (20.103.0019 or higher) [2020 R1 Source and Deployment Package](https://github.com/Acumatica/Acumatica-Cost-Accrual-basedon-LineCost/tree/2020R1)
+* Acumatica 2020 R2 (20.202.0043 or higher) [2020 R2 Source and Deployment Package](https://github.com/Acumatica/Acumatica-Cost-Accrual-basedon-LineCost/tree/2020R2)
+* Acumatica 2021 R2 (21.207.0045 or higher) [2021 R2 Source and Deployment Package](https://github.com/Acumatica/Acumatica-Cost-Accrual-basedon-LineCost/tree/2021R2)
+* Acumatica 2023 R2 (23.212.0024 or higher) [2023 R2 Source and Deployment Package](https://github.com/Acumatica/Acumatica-Cost-Accrual-basedon-LineCost/tree/2023R2)
 
 Quick Start
 -----------
