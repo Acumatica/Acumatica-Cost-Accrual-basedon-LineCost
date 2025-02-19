@@ -1,5 +1,5 @@
-﻿using System;
-using PX.Data;
+﻿using PX.Data;
+using PX.Objects.CS;
 using PX.Objects.IN;
 using PX.Objects.SO;
 
@@ -7,6 +7,8 @@ namespace PX.LineCostForAccrueExt
 {
     public sealed class SOLineLineCostAccrueExt : PXCacheExtension<SOLine>
     {
+        public static bool IsActive() => PXAccess.FeatureInstalled<FeaturesSet.distributionModule>();
+
         #region UsrUseLineCostForAccrue
         public abstract class usrUseLineCostForAccrue : PX.Data.BQL.BqlBool.Field<usrUseLineCostForAccrue> { }
 

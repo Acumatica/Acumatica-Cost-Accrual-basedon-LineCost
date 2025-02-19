@@ -1,13 +1,14 @@
-﻿using System;
-using PX.Data;
+﻿using PX.Data;
 using PX.Objects.IN;
 using PX.Objects.FS;
-using System.Collections.Generic;
+using PX.Objects.CS;
 
 namespace PX.LineCostForAccrueExt
 {
     public sealed class FSAppointmentDetCostAccrueExt : PXCacheExtension<FSAppointmentDet>
     {
+        public static bool IsActive() => PXAccess.FeatureInstalled<FeaturesSet.serviceManagementModule>();
+
         #region UsrUseLineCostForAccrue
         public abstract class usrUseLineCostForAccrue : PX.Data.BQL.BqlBool.Field<usrUseLineCostForAccrue> { }
 

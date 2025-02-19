@@ -1,12 +1,14 @@
-﻿using System;
-using PX.Data;
+﻿using PX.Data;
 using PX.Objects.CR;
+using PX.Objects.CS;
 using PX.Objects.IN;
 
 namespace PX.LineCostForAccrueExt
 {
     public sealed class CROpportunityProductsLineCostAccrueExt : PXCacheExtension<CROpportunityProducts>
     {
+        public static bool IsActive() => PXAccess.FeatureInstalled<FeaturesSet.distributionModule>();
+
         #region UsrLineCostForAccrue
         public abstract class usrLineCostForAccrue : PX.Data.BQL.BqlBool.Field<usrLineCostForAccrue> { }
 

@@ -5,6 +5,8 @@ namespace PX.LineCostForAccrueExt
 {
     public sealed class InventoryItemLineCostAccrueExt : PXCacheExtension<InventoryItem>
     {
+        public static bool IsActive() => true;
+
         #region UsrUseLineCostForAccrue
         public abstract class usrUseLineCostForAccrue : PX.Data.BQL.BqlBool.Field<usrUseLineCostForAccrue> { }
 

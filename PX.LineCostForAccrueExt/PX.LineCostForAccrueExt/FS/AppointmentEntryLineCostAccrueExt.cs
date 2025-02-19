@@ -1,12 +1,14 @@
-﻿using System;
-using PX.Data;
+﻿using PX.Data;
 using PX.Objects.IN;
 using PX.Objects.FS;
+using PX.Objects.CS;
 
 namespace PX.LineCostForAccrueExt
 {
     public class AppointmentEntryLineCostAccrueExt : PXGraphExtension<AppointmentEntry>
     {
+        public static bool IsActive() => PXAccess.FeatureInstalled<FeaturesSet.serviceManagementModule>();
+
         public override void Initialize()
         {
             PXUIFieldAttribute.SetDisplayName<FSAppointmentDet.curyUnitCost>(Base.AppointmentDetails.Cache, "Unit Cost");

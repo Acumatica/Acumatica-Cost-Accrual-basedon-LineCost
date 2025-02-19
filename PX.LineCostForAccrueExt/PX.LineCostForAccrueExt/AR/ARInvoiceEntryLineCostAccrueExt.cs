@@ -5,6 +5,7 @@ using PX.Objects.AR;
 using PX.Objects.IN;
 using PX.Objects.PO;
 using PX.Objects.FS;
+using PX.Objects.FS.DAC;
 
 namespace PX.LineCostForAccrueExt
 {
@@ -56,8 +57,8 @@ namespace PX.LineCostForAccrueExt
 						}
 						else
 						{
-							FSARTran arDataExt = FSARTran.PK.Find(Base, row.TranType, row.RefNbr, row.LineNbr);
-							if (arDataExt != null && !String.IsNullOrEmpty(arDataExt.SrvOrdType) && !String.IsNullOrEmpty(arDataExt.ServiceOrderRefNbr))
+                            FSxARTran arDataExt = PXCache<ARTran>.GetExtension<FSxARTran>(row);
+                            if (arDataExt != null && !String.IsNullOrEmpty(arDataExt.SrvOrdType) && !String.IsNullOrEmpty(arDataExt.ServiceOrderRefNbr))
 							{
 								PXResult<POLine, FSSODet> datainfo = (PXResult<POLine, FSSODet>)
 																	 PXSelectJoin<POLine, InnerJoin<FSSODet, On<FSSODet.poLineNbr, Equal<POLine.lineNbr>,

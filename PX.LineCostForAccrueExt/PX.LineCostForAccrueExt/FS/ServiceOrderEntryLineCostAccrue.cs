@@ -1,14 +1,14 @@
 ﻿using System;
 using PX.Data;
-using PX.Objects.IN;
 using PX.Objects.FS;
-using System.Linq;
-using System.Collections.Generic;
+using PX.Objects.CS;
 
 namespace PX.LineCostForAccrueExt
 {
     public class ServiceOrderEntryLineCostAccrue : PXGraphExtension<ServiceOrderEntry>
     {
+        public static bool IsActive() => PXAccess.FeatureInstalled<FeaturesSet.serviceManagementModule>();
+
         //Until Temparory fix/workaround to overcome service management issue AC-196133 fixed in 2020 R2 Update 12
         [PXMergeAttributes(Method = MergeMethod.Append)]
         [PXFormula(typeof(AppointmentExists<FSSODet.sODetID>))]

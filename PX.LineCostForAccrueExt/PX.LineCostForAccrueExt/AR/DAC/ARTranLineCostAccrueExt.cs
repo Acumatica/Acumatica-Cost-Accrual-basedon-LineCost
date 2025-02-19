@@ -5,6 +5,8 @@ namespace PX.LineCostForAccrueExt
 {
     public sealed class ARTranLineCostAccrueExt : PXCacheExtension<ARTran>
     {
+        public static bool IsActive() => true;
+
         #region UsrLineCostForAccrue
         public abstract class usrLineCostForAccrue : PX.Data.BQL.BqlBool.Field<usrLineCostForAccrue> { }
 
