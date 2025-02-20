@@ -10,6 +10,7 @@ Out-of-box Acumatica allows cost accrual based on non-stock item’s Standard Co
 * Acumatica 2020 R2 (20.202.0043 or higher) [2020 R2 Source and Deployment Package](https://github.com/Acumatica/Acumatica-Cost-Accrual-basedon-LineCost/tree/2020R2)
 * Acumatica 2021 R2 (21.207.0045 or higher) [2021 R2 Source and Deployment Package](https://github.com/Acumatica/Acumatica-Cost-Accrual-basedon-LineCost/tree/2021R2)
 * Acumatica 2023 R2 (23.212.0024 or higher) [2023 R2 Source and Deployment Package](https://github.com/Acumatica/Acumatica-Cost-Accrual-basedon-LineCost/tree/2023R2)
+* Acumatica 2024 R2 (24.208.0020 or higher) [2024 R2 Source and Deployment Package](https://github.com/Acumatica/Acumatica-Cost-Accrual-basedon-LineCost/tree/2024R2)
 
 Quick Start
 -----------
